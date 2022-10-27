@@ -28,5 +28,5 @@ BBC Micro Model B     |b-em v-ec63538
 BBC Master 128        |"
 BBC Master Turbo      |"
 
-Several screenshots of the final screens are [here](http://litwr2.atspace.eu/basic-mandelbrot/screenshots.html).
+Several screenshots of the final screens are [here](https://litwr2.github.io/basic-mandelbrot/screenshots.html).
 

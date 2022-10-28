@@ -6,7 +6,7 @@
 15 MODE 1:time0=TIME
 16 FOR t%=0 TO 199:j=j(t%):FOR s%=0 TO 319:r=r(s%):x=r:y=j
 17 FOR i=1 TO n%:x2=x*x:y2=y*y:IF x2+y2<4 THEN xy=x*y:x=x2-y2+r:y=2*xy+j:NEXT
-18 d(c%,s%)=i:IF i<=n% THEN:PLOT s%+s%,400-t%-t%,1
+18 d(c%,s%)=i:IF i<=n% THEN PLOT s%+s%,400-t%-t%,1
 19 IF s%<2 OR t%<2 THEN 28
 20 IF TEST(s%+s%-2,402-t%-t%)=0 THEN 28
 21 m=d(b%,s%-1)

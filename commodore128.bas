@@ -6,7 +6,7 @@
 15 color0,1:color1,4:graphic 1:ti$="000000":scnclr
 16 fort=0to199:j=j(t):fors=0to319:r=r(s):x=r:y=j
 17 fori=1ton:x2=x*x:y2=y*y:ifx2+y2<4thenxy=x*y:x=x2-y2+r:y=2*xy+j:next
-18 d(c,s)=i:ifi<=nthen:draw1,s,t
+18 d(c,s)=i:ifi<=nthendraw1,s,t
 19 ifs<2ort<2then28
 20 locates-1,t-1:ifrdot(2)=0then28
 21 m=d(b,s-1)
@@ -16,5 +16,5 @@
 25 ifd(a,s-1)<mandd(c,s-1)<mthen27
 26 goto28
 27 draw0
-28 nexts:z=a:a=b:b=c:c=z:next:printti:clk$=ti$
-29 getkeya$:graphic0:printclk$
+28 nexts:z=a:a=b:b=c:c=z:next:t0=ti:char1,1,1,ti$
+29 getkeya$:graphic0:printt0

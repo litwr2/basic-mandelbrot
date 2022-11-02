@@ -5,29 +5,36 @@ All systems draw 320x200 raster in 2 colors.  This project was based on codes fr
 
 ## Benchmark results
 
-Rank|System                 |Code type           |Timing     |Timing (sec)
-:---|:----------------------|-------------------:|----------:|-----------:
- 1  |Commodore 128          |ROM Basic 7.0       |12h 52m 57s|       46377
- 2  |Commodore Plus 4       |ROM Basic 3.5       |10h 16m 49s|       37009
- 3  |IBM PC 5150            |BASIC.COM           | 5h 40m  1s|       20401
- 4  |Amstrad CPC6128        |ROM Basic           | 5h 25m 40s|       19540
- 5  |BBC Micro Model B      |ROM Basic II        | 4h 34m 22s|       16462
- 6  |Commodore Plus 4       |AustroSpeed compiler| 4h 28m 56s|       16136
- 7  |BBC Master 128         |ROM Basic IV        | 3h 22m 54s|       12174
- 8  |BBC Master Turbo       |ROM Basic IV        | 1h 34m  8s|        5648
- 9  |Raspberry Pi/B @700 MHz|BBC Basic           |         5s|           5
+Rank|System                 |Code type           |              Timing|          Emulator
+:---|:----------------------|:-------------------|-------------------:|-----------------:
+ 1  |Sanyo MPC-25FD         |ROM MSX Basic 2.0   |16h 46m  8s = 60368s|    openMSX 0.15.0 
+ 2  |Commodore 128          |ROM Basic 7.0       |12h 52m 57s = 46377s|          vice 3.3
+ 3  |Corvette               |ROM Basic 2.0       |12h 17m 56s = 44276s|     emu80 4.0.411
+ 4  |Corvette               |Disk Basic 2        |11h 41m 38s = 42098s|     emu80 4.0.411
+ 5  |Commodore Plus/4       |ROM Basic 3.5       |10h 16m 49s = 37009s|   plus4emu 1.2.10
+ 6  |IBM PC 5150            |BASIC.COM           | 6h 12m 19s = 22339s|           pcem 17
+ 7  |Spectrum QL            |ROM BASIC           | 6h  3m 10s = 21790s|     QemuLator 3.4
+ 7  |IBM PC 5150            |BASIC.COM           | 5h 57m 48s = 21468s|pce-ibmpc 20220925
+ 8  |IBM PC 5150            |Cassette BASIC C1.10| 5h 57m 26s = 21446s|pce-ibmpc 20220925
+ 9  |IBM PC 5150            |GWBASIC v3.22       | 5h 43m 30s = 20610s|pce-ibmpc 20220925
+10  |Amstrad CPC6128        |ROM Basic           | 5h 13m 32s = 18812s|   ep128emu 2.0.11
+11  |Commodore Plus/4       |AustroSpeed compiler| 4h 28m 56s = 16136s|   plus4emu 1.2.10
+12  |BBC Micro Model B      |ROM Basic II        | 4h 27m 54s = 16074s|    b-em v-ec63538
+13  |BBC Master 128         |ROM Basic IV        | 3h 17m 35s = 11855s|    b-em v-ec63538
+14  |Panasonic FS-A1GT      |ROM MSX Basic 4.0   | 2h 50m 56s = 10256s|    openMSX 0.15.0
+15  |IBM PC 5170 @6MHz 2ws  |Cassette BASIC C1.10| 2h 19m 58s =  8398s|           pcem 17
+16  |IBM PC 5170 @6MHz 2ws  |BASIC.COM           | 2h 19m 56s =  8396s|           pcem 17
+17  |BBC Master Turbo       |ROM Basic IV        | 1h 31m 40s =  5500s|    b-em v-ec63538
+18  |IBM PC 5150            |BASIC Compiler 2.0  |    35m 27s =  2127s|pce-ibmpc 20220925
+19  |IBM PC 5170 @6MHz 2ws  |BASIC Compiler 2.0  |    13m 57s =   837s|           pcem 17
+20  |Archimedes 305         |ROM Basic V v1.05   |    11m  4s =   664s|    Arculator v2.1
+21  |Raspberry Pi/B @700 MHz|BBC Basic V v1.53   |         5s =     5s|
 
+Two emulators were used to get results for the IBM PC 5150 (the first IBM PC).  The both show almost the same results.  The IBM PC 5170 is the original name for the IBM PC/AT.
 
-## Emulators
+The Sanyo MPC-25FD is a typical MSX2 computer.  The Panasonic FS-A1GT is an MSX turboR computer.
 
-System                |Emulator
-:---------------------|--------------:
-Commodore 128         |vice 3.3
-Commodore Plus 4      |plus4emu 1.2.10
-Amstrad CPC6128       |ep128emu 2.0.11
-BBC Micro Model B     |b-em v-ec63538
-BBC Master 128        |"
-BBC Master Turbo      |"
+There is information that QemuLator is approximately 7% faster than the real iron.
 
 Several screenshots of the final screens are [here](https://litwr2.github.io/basic-mandelbrot/screenshots.html).
 

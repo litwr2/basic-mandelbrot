@@ -1,5 +1,5 @@
 # basic-mandelbrot
-Basic texts that implement very slow computation and visualization Mandelbrot set
+Basic texts that implement very slow computation and visualization of the Mandelbrot set
 
 All systems draw 320x200 raster in 2 colors.  This project was based on codes from [this blog post](http://cbmandelbrot.blogspot.com/).  Codes in this project are straightforward adaptation for systems tested.
 
